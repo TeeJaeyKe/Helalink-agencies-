@@ -1,114 +1,49 @@
-# Helalink 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Helalink Agencies - Earn Online Easily</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; background: #f9f9f9; color: #222; }
-        header { background: #0a2940; color: #fff; padding: 2rem 1rem; text-align: center; }
-        nav { background: #10263a; padding: 0.5rem; text-align: center; }
-        nav a { color: #fff; margin: 0 1rem; text-decoration: none; font-weight: bold; }
-        main { max-width: 900px; margin: 2rem auto; background: #fff; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);}
-        section { margin-bottom: 2rem; }
-        h2 { color: #0a2940; }
-        ul { margin-top: 0.5rem; }
-        footer { background: #10263a; color: #fff; text-align: center; padding: 1rem; margin-top: 2rem; }
-        .levels { background: #eef6fc; padding: 1rem; border-radius: 6px; margin-top: 1rem; }
-        .advantages { background: #f1f9ed; padding: 1rem; border-radius: 6px; }
-        .register-section { background: #e4f3eb; padding: 1.5rem; border-radius: 7px; margin-bottom: 2rem; text-align: center; }
-        .register-section a.button {
-            display: inline-block;
-            background: #0a2940;
-            color: #fff;
-            padding: 0.7rem 1.5rem;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: bold;
-            margin: 0.3rem 0.5rem;
-            transition: background 0.3s;
-        }
-        .register-section a.button:hover { background: #16537e; }
-        .register-links { margin-top: 1rem; }
-        .register-info { font-size: 1.1rem; margin-bottom: 0.5rem; }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Welcome to Helalink Agencies</h1>
-        <p>Your gateway to easy online earnings!</p>
-    </header>
-    <nav>
-        <a href="#register">Register</a>
-        <a href="#how-it-works">How It Works</a>
-        <a href="#bonuses">Bonuses & Advantages</a>
-        <a href="#faq">FAQs</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <main>
-        <section id="register" class="register-section">
-            <h2>Register & Get Started</h2>
-            <div class="register-info">
-                <b>Phone:</b> <a href="tel:0777739948">0777739948</a>
-            </div>
-            <div class="register-links">
-                <a href="https://helalink.com/register.php?ref=TeejaeyKe" class="button" target="_blank">Registration Link</a>
-                <a href="https://wa.me/254777739948" class="button" target="_blank">WhatsApp Chat</a>
-            </div>
-            <p style="margin-top:0.7rem; color:#0a2940;">Click the registration link to activate your account, or contact us on WhatsApp for assistance!</p>
-        </section>
-        <section id="how-it-works">
-            <h2>How It Works</h2>
-            <ul>
-                <li>💸 <b>Welcome Bonus:</b> Get USD 1.5 immediately when you activate your account!</li>
-                <li>📝 Answer simple surveys and earn</li>
-                <li>▶️ Watch promotional YouTube videos and earn</li>
-                <li>🎵 Watch Tiktok videos and earn</li>
-                <li>🎮 Play games of your choice and earn</li>
-                <li>🖱️ Click on ads and earn</li>
-                <li>📸 Watch Instagram reels and earn</li>
-                <li>📺 Watch Facebook reels and earn</li>
-                <li>
-                    🤝 <b>Affiliate Program:</b> Earn in up to 3 levels:
-                    <div class="levels">
-                        <ul style="margin:0;">
-                            <li>Level 1 ➡️ <b>USD 3</b></li>
-                            <li>Level 2 ➡️ <b>USD 1.5</b></li>
-                            <li>Level 3 ➡️ <b>USD 0.5</b></li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-        </section>
-        <section id="bonuses">
-            <h2>Bonuses & Advantages</h2>
-            <div class="advantages">
-                <ul>
-                    <li>🥎 Weekly agent bonus</li>
-                    <li>🥎 Automatic activations</li>
-                    <li>🥎 Instant withdrawals</li>
-                    <li>🎾 Free Forex classes</li>
-                    <li>🥎 24/7 customer service</li>
-                </ul>
-            </div>
-        </section>
-        <section id="faq">
-            <h2>Frequently Asked Questions</h2>
-            <ul>
-                <li><b>How do I activate my account?</b><br>Sign up and follow the activation instructions on your dashboard.</li>
-                <li><b>How do I withdraw my earnings?</b><br>Withdrawals are instant through your preferred method from your account dashboard.</li>
-                <li><b>How do I join the affiliate program?</b><br>Share your referral link after activating your account and earn as your network grows!</li>
-                <li><b>Where can I get support?</b><br>See our contact section or use the 24/7 live chat on your dashboard.</li>
-            </ul>
-        </section>
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Need help? Reach out to our 24/7 customer service at <a href="mailto:support@helalink.com">support@helalink.com</a> or call +123-456-7890.</p>
-        </section>
-    </main>
-    <footer>
-        &copy; 2025 Helalink Agencies. All rights reserved.
-    </footer>
-</body>
-</html>
+Helalink Agencies
+import React, { useMemo, useState, useEffect } from "react"; import { BrowserRouter, Routes, Route, Link, useNavigate } from "react-router-dom"; import { motion } from "framer-motion"; import { Button } from "@/components/ui/button"; import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"; import { Input } from "@/components/ui/input"; import { Textarea } from "@/components/ui/textarea"; import { Badge } from "@/components/ui/badge"; import { CheckCircle2, Wallet, PlaySquare, ThumbsUp, Instagram, Facebook, Gamepad2, AlignLeft, Loader2, LogIn, Mail, Phone, ShieldCheck, Rocket, ArrowRight, Home as HomeIcon, MessageSquare, HandCoins, Users2 } from "lucide-react";
+
+// ====== CONFIG (edit freely) ====== const BRAND = { name: "HelaLink Agencies", whatsapp: "https://wa.me/254777739948", register: "https://helalink.com/register.php?ref=TeejaeyKe", email: "mailto:teejaeyke@gmail.com", };
+
+// ====== LAYOUT ====== function Shell({ children }) { return ( <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 text-slate-100"> <TopNav /> <main className="mx-auto max-w-6xl px-4 pb-24 pt-24 md:pt-28">{children}</main> <Footer /> <WhatsAppFAB /> </div> ); }
+
+function TopNav() { const [open, setOpen] = useState(false); return ( <header className="fixed inset-x-0 top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-slate-900/60 border-b border-white/10"> <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3"> <Link to="/" className="flex items-center gap-2"> <div className="h-9 w-9 rounded-2xl bg-gradient-to-br from-emerald-400 to-cyan-400" /> <span className="font-semibold tracking-wide">{BRAND.name}</span> </Link> <div className="hidden items-center gap-1 md:flex"> <NavLink to="/" label="Home" icon={<HomeIcon className="h-4 w-4" />} /> <NavLink to="/earn" label="Ways to Earn" icon={<HandCoins className="h-4 w-4" />} /> <NavLink to="/contact" label="Contact" icon={<Mail className="h-4 w-4" />} /> <NavLink to="/login" label="Login" icon={<LogIn className="h-4 w-4" />} /> <a href={BRAND.register} target="_blank" rel="noreferrer"> <Button className="ml-2 rounded-2xl">Register</Button> </a> </div> <Button variant="ghost" className="md:hidden" onClick={() => setOpen((v) => !v)}> <AlignLeft className="h-5 w-5" /> </Button> </nav> {open && ( <div className="md:hidden border-t border-white/10"> <div className="mx-auto max-w-6xl px-4 py-2 grid gap-2"> <MobileNavLink to="/" label="Home" /> <MobileNavLink to="/earn" label="Ways to Earn" /> <MobileNavLink to="/contact" label="Contact" /> <MobileNavLink to="/login" label="Login" /> <a className="rounded-xl bg-emerald-500/20 px-3 py-2 text-emerald-300" href={BRAND.register} target="_blank" rel="noreferrer">Register</a> </div> </div> )} </header> ); }
+
+function NavLink({ to, label, icon }) { return ( <Link to={to} className="rounded-xl px-3 py-2 text-sm hover:bg-white/5"> <span className="inline-flex items-center gap-2 opacity-90 hover:opacity-100">{icon}{label}</span> </Link> ); } function MobileNavLink({ to, label }) { return ( <Link to={to} className="rounded-xl px-3 py-2 text-sm hover:bg-white/5">{label}</Link> ); }
+
+function Footer() { return ( <footer className="border-t border-white/10"> <div className="mx-auto max-w-6xl px-4 py-10 grid gap-6 md:grid-cols-3"> <div> <div className="flex items-center gap-2"> <div className="h-8 w-8 rounded-xl bg-gradient-to-br from-emerald-400 to-cyan-400" /> <span className="font-semibold">{BRAND.name}</span> </div> <p className="mt-3 text-sm text-slate-300/80">Your success partner! Earn online using your smartphone from anywhere you are.</p> </div> <div className="text-sm"> <div className="font-semibold mb-2">Quick Links</div> <ul className="grid gap-1"> <li><Link className="hover:underline" to="/earn">Ways to Earn</Link></li> <li><a className="hover:underline" href={BRAND.register} target="_blank" rel="noreferrer">Register</a></li> <li><Link className="hover:underline" to="/login">Login</Link></li> <li><Link className="hover:underline" to="/contact">Contact</Link></li> </ul> </div> <div className="text-sm"> <div className="font-semibold mb-2">Reach Us</div> <div className="flex flex-col gap-2"> <a className="inline-flex items-center gap-2 hover:underline" href={BRAND.whatsapp} target="_blank" rel="noreferrer"><Phone className="h-4 w-4" /> WhatsApp</a> <a className="inline-flex items-center gap-2 hover:underline" href={BRAND.email}><Mail className="h-4 w-4" /> teejaeyke@gmail.com</a> </div> </div> </div> <div className="border-t border-white/10 py-4 text-center text-xs text-slate-500">© {new Date().getFullYear()} {BRAND.name}. All rights reserved.</div> </footer> ); }
+
+function WhatsAppFAB() { return ( <a href={BRAND.whatsapp} target="_blank" rel="noreferrer" className="fixed bottom-5 right-5 z-50"> <Button size="lg" className="rounded-full shadow-lg"> <MessageSquare className="mr-2 h-4 w-4" /> Chat on WhatsApp </Button> </a> ); }
+
+// ====== PAGES ====== function Home() { const perks = [ { icon: <ShieldCheck className="h-5 w-5" />, title: "Activation $8", desc: "One-time activation to unlock the platform." }, { icon: <Rocket className="h-5 w-5" />, title: "Up to $40+/day", desc: "With an active account and consistent effort." }, { icon: <Users2 className="h-5 w-5" />, title: "Affiliate Levels (3)", desc: "Level 1: $3 • Level 2: $1.5 • Level 3: $0.5" }, ];
+
+return ( <Shell> <section className="grid gap-10 md:grid-cols-2 md:items-center"> <div> <motion.h1 initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} className="text-4xl font-bold leading-tight md:text-5xl"> Welcome to <span className="bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">{BRAND.name}</span> </motion.h1> <p className="mt-4 text-slate-300/90"> Your success partner! Earn online using your smartphone from the comfort of your home, school, or anywhere you are. </p> <div className="mt-6 flex flex-wrap gap-3"> <Link to="/earn"><Button size="lg" className="rounded-2xl">Explore Ways to Earn <ArrowRight className="ml-2 h-4 w-4" /></Button></Link> <a href={BRAND.register} target="_blank" rel="noreferrer"><Button size="lg" variant="secondary" className="rounded-2xl">Register Now</Button></a> </div> <div className="mt-6 flex flex-wrap gap-2"> {perks.map((p, i) => ( <Badge key={i} className="rounded-xl bg-white/5 px-3 py-1 text-slate-200"><span className="mr-2 inline-flex">{p.icon}</span>{p.title}</Badge> ))} </div> </div> <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5, delay: 0.05 }} className="grid gap-4"> <Card className="rounded-2xl border-white/10 bg-white/5"> <CardHeader> <CardTitle className="text-lg">Highlights</CardTitle> </CardHeader> <CardContent className="grid gap-3 text-sm text-slate-300/90"> <p>✍🏼 Activation fee is <span className="font-semibold">USD 8</span>.</p> <p>⏰ With an active account, be ready to make up to <span className="font-semibold">USD 40+ daily</span>.</p> <p>🎯 Welcome bonus: <span className="font-semibold">USD 1.5</span> after activation.</p> </CardContent> </Card> <StatsStrip /> </motion.div> </section> <section className="mt-14"> <EarnGrid compact /> </section> </Shell> ); }
+
+function StatsStrip() { const stats = [ { label: "Weekly agent bonus", icon: <Wallet className="h-4 w-4" /> }, { label: "Automatic Activations", icon: <CheckCircle2 className="h-4 w-4" /> }, { label: "Instant withdrawals", icon: <Loader2 className="h-4 w-4" /> }, { label: "Free Forex classes", icon: <PlaySquare className="h-4 w-4" /> }, { label: "24/7 customer service", icon: <ThumbsUp className="h-4 w-4" /> }, ]; return ( <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3"> {stats.map((s, i) => ( <Card key={i} className="rounded-2xl border-white/10 bg-white/5"> <CardContent className="flex items-center gap-2 p-4 text-sm text-slate-300/90"> {s.icon} <span>{s.label}</span> </CardContent> </Card> ))} </div> ); }
+
+function EarnGrid({ compact = false }) { const items = useMemo(() => ([ { icon: <CheckCircle2 className="h-5 w-5" />, title: "Welcome Bonus", desc: "Get USD 1.5 immediately after activation." }, { icon: <AlignLeft className="h-5 w-5" />, title: "Answer Surveys", desc: "Complete simple surveys and earn." }, { icon: <PlaySquare className="h-5 w-5" />, title: "Watch YouTube", desc: "Watch promotional videos and earn." }, { icon: <PlaySquare className="h-5 w-5" />, title: "Watch TikTok", desc: "Watch promotional TikTok videos and earn." }, { icon: <Gamepad2 className="h-5 w-5" />, title: "Play Games", desc: "Play games of your choice and earn." }, { icon: <ThumbsUp className="h-5 w-5" />, title: "Click Ads", desc: "Click on ads and earn." }, { icon: <Instagram className="h-5 w-5" />, title: "Watch IG Reels", desc: "Watch Instagram reels and earn." }, { icon: <Facebook className="h-5 w-5" />, title: "Watch FB Reels", desc: "Watch Facebook reels and earn." }, { icon: <Users2 className="h-5 w-5" />, title: "Affiliate Program", desc: "Earn in 3 levels: L1 $3, L2 $1.5, L3 $0.5." }, ]), []);
+
+return ( <section> {!compact && <h2 className="mb-4 text-2xl font-semibold">Ways of Earning</h2>} <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3"> {items.map((it, i) => ( <Card key={i} className="rounded-2xl border-white/10 bg-white/5 hover:bg-white/10 transition"> <CardContent className="p-4"> <div className="flex items-center gap-2 text-emerald-300">{it.icon}<span className="font-medium text-slate-100">{it.title}</span></div> <p className="mt-2 text-sm text-slate-300/90">{it.desc}</p> </CardContent> </Card> ))} </div> </section> ); }
+
+function EarnPage() { return ( <Shell> <div className="max-w-3xl"> <h1 className="text-3xl font-bold">Ways of Earning</h1> <p className="mt-3 text-slate-300/90"> 🔰✋🏼 WELCOME TO HELALINK AGENCIES MAKE MONEY ONLINE 🌍 💭 </p> <p className="mt-2 text-slate-300/90"> 🔮 Your success partner! Earn online using your smartphone from the comfort of your home, place, school or from anywhere you are. 💫 </p> <div className="mt-6"><EarnGrid /></div> <div className="mt-8 grid gap-3"> <Card className="rounded-2xl border-white/10 bg-white/5"> <CardHeader><CardTitle>Affiliate Levels</CardTitle></CardHeader> <CardContent className="text-sm text-slate-300/90"> Level 1 ➡️ USD 3<br /> Level 2 ➡️ USD 1.5<br /> Level 3 ➡️ USD 0.5 </CardContent> </Card> <Card className="rounded-2xl border-white/10 bg-white/5"> <CardHeader><CardTitle>Added Advantages</CardTitle></CardHeader> <CardContent className="text-sm text-slate-300/90 grid gap-1"> <div>🥎 Weekly agent bonus</div> <div>🥎 Automatic Activations</div> <div>🥎 Instant withdrawals</div> <div>🎾 Free Forex classes</div> <div>🥎 24/7 customer service</div> </CardContent> </Card> </div> <div className="mt-10 flex flex-wrap gap-3"> <a href={BRAND.register} target="_blank" rel="noreferrer"><Button size="lg" className="rounded-2xl">Register Now</Button></a> <a href={BRAND.whatsapp} target="_blank" rel="noreferrer"><Button variant="secondary" size="lg" className="rounded-2xl">Chat on WhatsApp</Button></a> </div> </div> </Shell> ); }
+
+function ContactPage() { const [form, setForm] = useState({ name: "", email: "", message: "" }); const [sent, setSent] = useState(false);
+
+const onSubmit = (e) => { e.preventDefault(); // OPEN default mail client with prefilled details (no backend needed) const subject = encodeURIComponent(Inquiry from ${form.name}); const body = encodeURIComponent(Name: ${form.name}\nEmail: ${form.email}\n\n${form.message}); window.location.href = ${BRAND.email}?subject=${subject}&body=${body}; setSent(true); };
+
+return ( <Shell> <div className="max-w-xl"> <h1 className="text-3xl font-bold">Contact Us</h1> <p className="mt-2 text-slate-300/90">Have questions? Send us a message and we'll get back to you.</p> <form onSubmit={onSubmit} className="mt-6 grid gap-4"> <div> <label className="mb-1 block text-sm text-slate-300">Your Name</label> <Input required value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} placeholder="Jane Doe" className="bg-white/5" /> </div> <div> <label className="mb-1 block text-sm text-slate-300">Email</label> <Input required type="email" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} placeholder="you@example.com" className="bg-white/5" /> </div> <div> <label className="mb-1 block text-sm text-slate-300">Message</label> <Textarea required value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} placeholder="How can we help?" className="bg-white/5" /> </div> <div className="flex items-center gap-3"> <Button type="submit" className="rounded-2xl">Send Message</Button> <a href={BRAND.whatsapp} target="_blank" rel="noreferrer"><Button variant="secondary" type="button" className="rounded-2xl">WhatsApp</Button></a> </div> {sent && ( <p className="text-sm text-emerald-300">Thanks! Your email draft opened in your mail app.</p> )} </form> </div> </Shell> ); }
+
+function LoginPage() { const [creds, setCreds] = useState({ email: "", password: "" }); const [error, setError] = useState(""); const nav = useNavigate();
+
+const handleLogin = (e) => { e.preventDefault(); setError(""); // Demo client-side login. In production, replace with real auth API. if (creds.email && creds.password.length >= 4) { localStorage.setItem("hl_auth", JSON.stringify({ email: creds.email, ts: Date.now() })); nav("/dashboard"); } else { setError("Invalid email or password"); } };
+
+return ( <Shell> <div className="mx-auto w-full max-w-sm"> <h1 className="text-3xl font-bold">Login</h1> <p className="mt-2 text-slate-300/90">Use your email and password to continue.</p> <form onSubmit={handleLogin} className="mt-6 grid gap-4"> <div> <label className="mb-1 block text-sm text-slate-300">Email</label> <Input type="email" required value={creds.email} onChange={(e) => setCreds({ ...creds, email: e.target.value })} placeholder="you@example.com" className="bg-white/5" /> </div> <div> <label className="mb-1 block text-sm text-slate-300">Password</label> <Input type="password" required value={creds.password} onChange={(e) => setCreds({ ...creds, password: e.target.value })} placeholder="••••••••" className="bg-white/5" /> </div> {error && <p className="text-sm text-rose-300">{error}</p>} <Button type="submit" className="rounded-2xl"><LogIn className="mr-2 h-4 w-4" /> Login</Button> <a href={BRAND.register} target="_blank" rel="noreferrer" className="text-center text-sm text-emerald-300 hover:underline">Don’t have an account? Register</a> </form> </div> </Shell> ); }
+
+function Dashboard() { const nav = useNavigate(); const [user, setUser] = useState(null); useEffect(() => { const raw = localStorage.getItem("hl_auth"); if (!raw) return nav("/login"); setUser(JSON.parse(raw)); }, [nav]);
+
+const logout = () => { localStorage.removeItem("hl_auth"); nav("/login"); };
+
+if (!user) return <Shell><div className="py-20 text-center text-slate-300">Loading…</div></Shell>;
+
+return ( <Shell> <div className="grid gap-6"> <div className="flex flex-wrap items-center justify-between gap-3"> <h1 className="text-3xl font-bold">Welcome, {user.email}</h1> <div className="flex gap-2"> <Link to="/earn"><Button variant="secondary" className="rounded-2xl">View Earning Options</Button></Link> <Button onClick={logout} className="rounded-2xl">Logout</Button> </div> </div> <div className="grid grid-cols-1 gap-4 md:grid-cols-3"> <Card className="rounded-2xl border-white/10 bg-white/5"> <CardHeader><CardTitle>Account</CardTitle></CardHeader> <CardContent className="text-sm text-slate-300/90"> Status: <span className="text-emerald-300">Active (demo)</span><br /> Activation Fee: USD 8 </CardContent> </Card> <Card className="rounded-2xl border-white/10 bg-white/5"> <CardHeader><CardTitle>Potential Earnings</CardTitle></CardHeader> <CardContent className="text-sm text-slate-300/90">Up to USD 40+/day with activity.</CardContent> </Card> <Card className="rounded-2xl border-white/10 bg-white/5"> <CardHeader><CardTitle>Affiliate Levels</CardTitle></CardHeader> <CardContent className="text-sm text-slate-300/90">L1 $3 • L2 $1.5 • L3 $0.5</CardContent> </Card> </div> <Card className="rounded-2xl border-white/10 bg-white/5"> <CardHeader><CardTitle>Get Started</CardTitle></CardHeader> <CardContent className="text-sm text-slate-300/90"> <ol className="list-decimal pl-5"> <li>Register your account: <a className="text-emerald-300 hover:underline" href={BRAND.register} target="_blank" rel="noreferrer">Registration Link</a></li> <li>Chat with us on WhatsApp if you need help: <a className="text-emerald-300 hover:underline" href={BRAND.whatsapp} target="_blank" rel="noreferrer">Open WhatsApp</a></li> <li>Explore earning options inside <Link to="/earn" className="text-emerald-300 hover:underline">Ways to Earn</Link>.</li> </ol> </CardContent> </Card> </div> </Shell> ); }
+
+// ====== APP (ROUTER) ====== export default function App() { return ( <BrowserRouter> <Routes> <Route path="/" element={<Home />} /> <Route path="/earn" element={<EarnPage />} /> <Route path="/contact" element={<ContactPage />} /> <Route path="/login" element={<LoginPage />} /> <Route path="/dashboard" element={<Dashboard />} /> </Routes> </BrowserRouter> ); }
+
